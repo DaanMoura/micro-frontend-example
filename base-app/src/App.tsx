@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 
+import RandomDogApp from './vue-components/randomDogApp';
+
 const CounterApp = React.lazy(() => import('app1/CounterApp'));
 const NotepadApp = React.lazy(() => import('app2/NotepadApp'));
 
@@ -11,8 +13,13 @@ function App() {
         <h1>Base App</h1>
       </header>
       <main>
-        <CounterApp />
-        <NotepadApp />
+        <div className="col">
+          <CounterApp />
+          <NotepadApp />
+        </div>
+        <div className="col">
+          <RandomDogApp />
+        </div>
       </main>
       <footer>
           <p>made by @daanmoura</p>

@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 
+import { Button } from '@daanmoura/concrete-ui'
+
 function App() {
   const [count, setCount] = React.useState(0);
 
@@ -14,9 +16,9 @@ function App() {
         Counter
       </h1>
 
-      <button onClick={handleClick}>
+      <Button onClick={handleClick}>
         Hit me
-      </button>
+      </Button>
 
       <p>
         You hit me <span>{count}</span> times

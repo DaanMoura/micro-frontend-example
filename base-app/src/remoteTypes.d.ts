@@ -11,3 +11,4 @@ declare module 'app2/NotepadApp' {
   
     export default NotepadApp;
 }
+
